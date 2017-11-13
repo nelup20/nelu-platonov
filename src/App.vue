@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <app-header></app-header>
     <router-view/>
   </div>
 </template>
 
 <script>
+import appHeader from "./components/Header";
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    "app-header": appHeader
+  }
 }
 </script>
 
@@ -18,6 +23,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
+
+<!-- Going to use components app-header for the Navigation
+and app-footer for the contact details and other. router-view will change the Portfolio, about and skills components
+-->
