@@ -13,12 +13,13 @@
               <p>Thanks for stopping by and have a wonderful day <i class="fa fa-smile-o" aria-hidden="true"></i></p>
               </div>
               <div id="navigation">
-                  <router-link to="/portfolio" class="routes"><i class="fa fa-code" aria-hidden="true"></i></router-link>
-                  <router-link to="/skills" class="routes"><i class="fa fa-check-square" aria-hidden="true"></i>
+                 
+                  <router-link @click.native="highlightRoute('Portfolio')" :class="{ highlight: routes.Portfolio }" to="/portfolio" class="routes"><i class="fa fa-code" aria-hidden="true"></i></router-link>
+                  <router-link @click.native="highlightRoute('Skills')" :class="{ highlight: routes.Skills }" to="/skills" class="routes"><i class="fa fa-check-square" aria-hidden="true"></i>
 </router-link>
-                  <router-link to="/about" class="routes"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  <router-link @click.native="highlightRoute('About')" :class="{ highlight: routes.About }" to="/about" class="routes"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
 </router-link>
-                  <router-link to="/contact" class="routes"><i class="fa fa-envelope" aria-hidden="true"></i>
+                  <router-link @click.native="highlightRoute('Contact')" :class="{ highlight: routes.Contact }" to="/contact" class="routes"><i class="fa fa-envelope" aria-hidden="true"></i>
 </router-link>
               </div>
               </div>
@@ -28,7 +29,42 @@
   </div>
 </template>
 <script>
-    
+    export default {
+        data(){
+            return {
+                currentRoute: "",                     // This is the route that the user is currently on (wether by button or address bar)
+                routes: {                              // These routes are simply to indicate which one is ACTIVE currently (for CSS class), nothing else.
+                    Portfolio: false,
+                    Skills: false,
+                    About: false,
+                    Contact: false,
+                }
+            }
+        },
+        methods: {
+            highlightRoute(e){                      // Method to highlight clicked button via CSS class, always makes all buttons
+                this.routes.Portfolio = false;      // not-highlighted then just sets the clicked button's route to true in this.routes
+                this.routes.Skills = false;
+                this.routes.About = false;
+                this.routes.Contact = false;
+                e === "Portfolio" ? this.routes.Portfolio = true : this.routes.Portfolio = false;
+                e === "Skills" ? this.routes.Skills = true : this.routes.Skills = false;
+                e === "About" ? this.routes.About = true : this.routes.About = false;
+                e === "Contact" ? this.routes.Contact = true : this.routes.Contact = false;
+            }
+        },
+        created(){                                      //Everytime the instance/component is created the current route gets stored
+            this.currentRoute = this.$route.name;       // ! Useful for when opening in a new tab/via address bar
+        },
+        watch: {
+            currentRoute: function(){               // Watches for changes in the current route via button or address bar
+                this.currentRoute === "Portfolio" ? this.routes.Portfolio = true : this.routes.Portfolio = false;
+                this.currentRoute === "Skills" ? this.routes.Skills = true : this.routes.Skills = false;
+                this.currentRoute === "About" ? this.routes.About = true : this.routes.About = false;
+                this.currentRoute === "Contact" ? this.routes.Contact = true : this.routes.Contact = false;
+            }
+        }
+    }
 </script>
 <style scoped>
     .area{
@@ -98,6 +134,10 @@
        color: black;
        background-color: white;
         
+    }
+    .highlight{
+        color: black;
+       background-color: white;
     }
 
 @media(min-width: 700px){

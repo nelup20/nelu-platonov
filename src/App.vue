@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <router-view/>
+    <app-header class="header"></app-header>
+    <router-view class="router"></router-view>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import appHeader from "./components/Header";
+import appFooter from "./components/Footer";
 
 export default {
   name: 'app',
   components: {
-    "app-header": appHeader
+    "app-header": appHeader,
+    "app-footer": appFooter
   }
 }
 </script>
@@ -23,6 +26,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.router{
+  height: 100vh;
+   background-color: #F2F2F2;
 }
 </style>
 
