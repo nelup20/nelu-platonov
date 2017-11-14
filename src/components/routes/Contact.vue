@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    CONTACT MOI
   </div>
 </template>
 <script>

@@ -117,22 +117,25 @@
         text-shadow: 0.025vh 0.025vh black
     }
     #navigation{
-        margin-top: 14vh;
+        margin-top: 17.8vh;
     }
     .routes{
         padding: 2vw;
-        padding-bottom: 4.1vw;
+        padding-bottom: 2vw;
         margin: 2.2vw;
         color: white;
         font-size: 3vw;
         border-radius: 8%;
         border-bottom-left-radius: 0%;
         border-bottom-right-radius: 0%;
+        transition: 0.25s; /* delays for 1 second */
+       -webkit-transition: 0.25s; /* for Safari & Chrome */
         
     }
     .routes:hover{
        color: black;
        background-color: white;
+
         
     }
     .highlight{
