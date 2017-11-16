@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <app-header class="header"></app-header>
+    <transition name="rotate" mode="out-in">
     <router-view class="router"></router-view>
+     </transition>
     <app-footer></app-footer>
   </div>
 </template>
@@ -30,6 +32,29 @@ export default {
 .router{
   height: 100vh;
    background-color: #F2F2F2;
+}
+
+.rotate-leave-active{
+  animation: rotate-in 0.5s;
+}
+.rotate-enter-active{
+  animation: rotate-out 0.5s;
+}
+@keyframes rotate-in {
+  0%{
+    transform: rotateY(0deg)
+  }
+  100%{
+    transform: rotateY(90deg)
+  }
+}
+@keyframes rotate-out {
+  100%{
+    transform: rotateY(0deg)
+  }
+  0%{
+    transform: rotateY(90deg)
+  }
 }
 </style>
 
