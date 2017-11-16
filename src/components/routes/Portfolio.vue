@@ -1,16 +1,16 @@
 <template>
-  <div >
+  <div :style="PortfolioComponent">
     <h2>PORTFOLIO</h2>
         <div class="portfolioNav">
           <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSite(-1)"></i>
         <div>
-          <a><img :src="`./src/assets/${previousSite.img}.png`" class="siteLogo otherSites" alt="" @click="PortfolioSite(-1)"></a>
+          <a><img :src="`./src/assets/${previousSite.img}.png`" class="otherSites" alt="" @click="PortfolioSite(-1)"></a>
         </div>
         <div>
           <a :href="currentSite.link" target="_blank"><img :src="`./src/assets/${currentSite.img}.png`" class="siteLogo" alt=""></a>
         </div>
         <div>
-          <a><img :src="`./src/assets/${nextSite.img}.png`" class="siteLogo otherSites" alt="" @click="PortfolioSite(1)" ></a>
+          <a><img :src="`./src/assets/${nextSite.img}.png`" class="otherSites" alt="" @click="PortfolioSite(1)" ></a>
         </div>
         <i class="fa fa-chevron-right" aria-hidden="true" @click="PortfolioSite(1)"></i>
       </div>
@@ -27,26 +27,26 @@
       </div>
       <h2>FREELANCE JOBS</h2>
       <div class="portfolioNav">
-          <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSite(-1)"></i>
+          <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSiteFreeLance(-1)"></i>
         <div>
-          <a><img :src="`./src/assets/${previousSite.img}.png`" class="siteLogo otherSites" alt="" @click="PortfolioSite(-1)"></a>
+          <a><img :src="`./src/assets/${previousSiteFreelance.img}.png`" class="otherSites" alt="" @click="PortfolioSiteFreeLance(-1)"></a>
         </div>
         <div>
-          <a :href="currentSite.link" target="_blank"><img :src="`./src/assets/${currentSite.img}.png`" class="siteLogo" alt=""></a>
+          <a :href="currentSiteFreelance.link" target="_blank"><img :src="`./src/assets/${currentSiteFreelance.img}.png`" class="siteLogo" alt=""></a>
         </div>
         <div>
-          <a><img :src="`./src/assets/${nextSite.img}.png`" class="siteLogo otherSites" alt="" @click="PortfolioSite(1)" ></a>
+          <a><img :src="`./src/assets/${nextSiteFreelance.img}.png`" class="otherSites" alt="" @click="PortfolioSiteFreeLance(1)" ></a>
         </div>
-        <i class="fa fa-chevron-right" aria-hidden="true" @click="PortfolioSite(1)"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" @click="PortfolioSiteFreeLance(1)"></i>
       </div>
       <div>
-        <div class="techUsedBar" :style="expandBar"  @click="activate">
+        <div class="techUsedBar" :style="expandBarFreelance"  @click="activateFreelance">
         <span id="barTitle">Technologies Used</span>
-        <i class="fa fa-plus-circle" aria-hidden="true" :class="{ 'fa fa-minus-circle' : active }"></i>
-       <div class="expandTech" :style="showTech">
-          <div>Front-end: <img v-for="(tech, index) in frontEnd" :key="index" :src="`./src/assets/${tech}.png`" class="logo" alt=""> </div>
-           <div>Back-end: <img v-for="(tech, index) in backEnd" :key="index" :src="`./src/assets/${tech}.png`" class="logo" alt=""> </div>
-           <div>Development: <img v-for="(tech, index) in development" :key="index" :src="`./src/assets/${tech}.png`" class="logo" alt=""> </div>
+        <i class="fa fa-plus-circle" aria-hidden="true" :class="{ 'fa fa-minus-circle' : activeFreelance }"></i>
+       <div class="expandTech" :style="showTechFreelance">
+          <div>Front-end: <img v-for="(tech, index) in frontEndFreelance" :key="index" :src="`./src/assets/${tech}.png`" class="logo" alt=""> </div>
+           <div>Back-end: <img v-for="(tech, index) in backEndFreelance" :key="index" :src="`./src/assets/${tech}.png`" class="logo" alt=""> </div>
+           <div>Development: <img v-for="(tech, index) in developmentFreelance" :key="index" :src="`./src/assets/${tech}.png`" class="logo" alt=""> </div>
        </div>
         </div>
       </div>
@@ -58,8 +58,13 @@
     export default {
       data(){
         return {
-          active: false,
-          expandBar: {
+          active: false,    //This is used for toggling the tech stack bar/portion
+          activeFreelance: false,
+          expandBar: {                //All of these are used for styling, most importantly for the transitions.
+            height: "1.6vw",
+            transition: "height 0.3s"
+          },
+          expandBarFreelance: {
             height: "1.6vw",
             transition: "height 0.3s"
           },
@@ -68,23 +73,43 @@
             display: "none",
             transition: 'display 0.2s'
           },
-          highlightedSiteIndex: 0,
-          frontEnd: '',
+          showTechFreelance: {
+            opacity: "0",
+            display: "none",
+            transition: 'display 0.2s'
+          },
+          highlightedSiteIndex: 0,          // These "Indexes" simply indicate which site is the currently highlighted one, basically which one to display
+          highlightedSiteIndexFreelance: 0, // the used tech stack for. We use this index (obviously add or substract 1 when navigating) to get data from the array in the store.
+          frontEnd: '',                     // Then we simply store the sub-arrays that we get from the highlighted site and store them in: frontEnd, backEnd etc.
           backEnd: '',
           development: '',
           currentSite: '',
           previousSite: '',
-          nextSite: ''
+          nextSite: '',
+          frontEndFreelance: '',
+          backEndFreelance: '',
+          developmentFreelance: '',
+          currentSiteFreelance: '',
+          previousSiteFreelance: '',
+          nextSiteFreelance: '',
+          PortfolioComponent: {       // To make sure there's enough space when opening both the portfolio and the freelancer tech stacks.
+            height: "125vh"
+          },
 
         }
       },
       methods: {
-        activate(){
+        activate(){       // This is just to toggle the bar, we increase the height and display of the tech stack which means we can use transition ! 
           this.active = !this.active;
           this.active ? this.expandBar.height = "13vw" : this.expandBar.height = "1.6vw";
           this.active ? this.showTech.display = "inline" : this.showTech.display = "none";
         },
-        PortfolioSite(amount){
+        activateFreelance(){
+          this.activeFreelance = !this.activeFreelance;
+          this.activeFreelance ? this.expandBarFreelance.height = "13vw" : this.expandBarFreelance.height = "1.6vw";
+          this.activeFreelance ? this.showTechFreelance.display = "inline" : this.showTechFreelance.display = "none";
+        },
+        PortfolioSite(amount){          // This is to navigate through our sites, we store only 3 sites at one point: previous, current(also highlighted) and next site. We simply add/substract 1 for the index
           if(amount === -1 && this.highlightedSiteIndex === 0){
             this.highlightedSiteIndex = 16
           } else if(amount === 1 && this.highlightedSiteIndex === 16){
@@ -106,19 +131,44 @@
           } else {
           this.previousSite = this.$store.state.sites[this.highlightedSiteIndex - 1];
           }
-        }
+        },
+        PortfolioSiteFreeLance(amount){
+          if(amount === -1 && this.highlightedSiteIndexFreelance === 0){
+            this.highlightedSiteIndexFreelance = 4
+          } else if(amount === 1 && this.highlightedSiteIndexFreelance === 4){
+            this.highlightedSiteIndexFreelance = 0
+          } else {
+            this.highlightedSiteIndexFreelance += amount;
+          };
+          this.frontEndFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance].frontEnd;
+          this.backEndFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance].backEnd;
+          this.developmentFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance].development;
+          this.currentSiteFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance];
+          if(this.highlightedSiteIndexFreelance === 4){
+            this.nextSiteFreelance = this.$store.state.sitesFreelance[0]
+          } else {
+            this.nextSiteFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance + 1];
+          }
+          if(this.highlightedSiteIndexFreelance === 0){
+            this.previousSiteFreelance = this.$store.state.sitesFreelance[4];
+          } else {
+          this.previousSiteFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance - 1];
+          };
+        },
       },
-      created(){
+      created(){      // This is just so we get our initial sites and tech stacks, always the same.
           this.frontEnd = this.$store.state.sites[this.highlightedSiteIndex].frontEnd;
           this.backEnd = this.$store.state.sites[this.highlightedSiteIndex].backEnd;
           this.development = this.$store.state.sites[this.highlightedSiteIndex].development;
           this.currentSite = this.$store.state.sites[this.highlightedSiteIndex];
           this.nextSite = this.$store.state.sites[this.highlightedSiteIndex + 1];
-          if(this.highlightedSiteIndex === 0){
-            this.previousSite = this.$store.state.sites[17];
-          } else {
-          this.previousSite = this.$store.state.sites[this.highlightedSiteIndex - 1];
-          }
+          this.previousSite = this.$store.state.sites[17];
+          this.frontEndFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance].frontEnd;
+          this.backEndFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance].backEnd;
+          this.developmentFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance].development;
+          this.currentSiteFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance];
+          this.nextSiteFreelance = this.$store.state.sitesFreelance[this.highlightedSiteIndexFreelance + 1];
+          this.previousSiteFreelance = this.$store.state.sitesFreelance[4];
       },
     }
 </script>
@@ -195,6 +245,7 @@
     height: 9vh;
     width: 5.5vw;
     margin-top: 4vh;
+    box-shadow: 1px 1px 7px black;
     cursor: pointer;
   }
   #leftArrow{
@@ -202,7 +253,6 @@
     margin-left: 5vw;
     margin-right: -5vw;
   }
-
 
 </style>
 <!--  height of bar when expanded height: 11vw; expandtech height: 10vw -->
