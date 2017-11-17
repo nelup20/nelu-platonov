@@ -93,7 +93,7 @@
           previousSiteFreelance: '',
           nextSiteFreelance: '',
           PortfolioComponent: {       // To make sure there's enough space when opening both the portfolio and the freelancer tech stacks.
-            height: "125vh"
+            height: "120vh"
           },
 
         }
@@ -179,7 +179,7 @@
     font-family: 'Ubuntu', sans-serif;
     display: inline-block;
     color: #327F32;
-    font-size: 3vw
+    font-size: 2.2vw
   }
   div{
     font-family: 'Roboto', sans-serif;

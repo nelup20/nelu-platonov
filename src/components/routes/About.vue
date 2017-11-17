@@ -27,7 +27,7 @@
           <br>
           <br>
           <br>
-          Wether you think I'm a boring guy, or you think I'm rather unique and enjoyed looking at my site, thanks for stopping by ! <i class="fa fa-smile-o" aria-hidden="true"></i>
+          Hope you enjoyed looking at my site, thanks for stopping by ! <i class="fa fa-smile-o" aria-hidden="true"></i>
 
         </div>
       </div>
@@ -51,6 +51,7 @@
     position: relative;
     width: 20vw;
     margin-left: 40vw;
+    box-shadow: 1px 2px 8px black;
   }
   .secondImg{
     display: block;
