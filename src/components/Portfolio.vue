@@ -253,7 +253,7 @@
     margin-left: 5vw;
     margin-right: -5vw;
   }
-  @media(max-width: 320px){
+  @media(max-width: 450px){
     h2{
       font-size: 5.5vw;
     }
@@ -285,6 +285,48 @@
     margin-left: 20vw;
   }
   }
+  @media (min-width: 768px) and (max-width: 1024px){
+    h2{
+      font-size: 4.5vw;
+    }
+    .otherSites{
+    height: 7vh;
+    width: 9.5vw;
+    margin-top: 4vh;
+    box-shadow: 1px 1px 7px black;
+    cursor: pointer;
+  }
+  .siteLogo{
+    height: 13.5vh;
+    width: 18vw ;
+    border-radius: 0%;
+    box-shadow: 1px 1px 7px black;
+    margin-bottom: 3vh;
+    transition: all 0.5s;
+  }
+  .portfolioNav i{
+    margin-top: 6.5vh;
+    margin-left: -7vw;
+    margin-right: 8vw;
+    font-size: 4vw;
+    color: darkorange;
+  }
+  #leftArrow{
+    margin-top: 6.5vh;
+    margin-left: 5vw;
+    margin-right: -5vw;
+  }
+  .techUsedBar{
+    
+    padding: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 3.5vw;
+    font-size: 2.8vw;
+  }
+  .techUsedBar i{
+    margin-left: 29.5vw;
+  }
+}
 
 </style>
 <!--  height of bar when expanded height: 11vw; expandtech height: 10vw -->

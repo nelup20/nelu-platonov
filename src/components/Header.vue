@@ -146,7 +146,7 @@
         color: black;
        background-color: white;
     }
-@media(max-width: 320px){
+@media(max-width: 450px){
     h1{
         font-size: 6vw;
     }
@@ -166,4 +166,23 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 4.2vw;
+    }
+    p{
+        font-size: 3.5vw;
+       display: inline;
+    }
+    .routes{
+        padding-bottom: 1.6vw;
+        font-size: 5vw;
+    }
+    #navigation{
+        margin-top: 27.6vh;
+    }
+}
 </style>

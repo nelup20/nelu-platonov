@@ -74,7 +74,7 @@ export default {
     opacity: 0;
     transition: all 1s;
   }
-  @media (max-width: 320px){
+  @media (max-width: 450px){
     i{
       font-size: 13vw;
     }
@@ -90,6 +90,34 @@ export default {
   .skype{
     margin-top: 19vw;
     margin-left: 13vw
+  }
+  .skypeName{
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 20vw;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .DivContactComponent{
+    height: 80vh;
+  }
+  }
+  @media (min-width: 768px) and (max-width: 1024px){
+    i{
+      font-size: 10vw;
+    }
+    i:hover{
+    color: #327F32;
+    font-size: 14.5vw;
+  }
+  a{
+    width: 9vw;
+    margin-left: 18.2vw;
+    margin-top: 19vw;
+  }
+  .skype{
+    margin-top: 19vw;
+    margin-left: 18.2vw
   }
   .skypeName{
     width: 100vw;

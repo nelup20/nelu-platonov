@@ -72,7 +72,7 @@
   div{
      font-family: 'Roboto', sans-serif;
   }
-  @media(max-width: 320px){
+  @media(max-width: 450px){
     .aboutText{
     display: inline;
     position: absolute;
@@ -96,6 +96,24 @@
     margin-top: 280vw;
     margin-left: -76vw;
     width: 98vw;
+  }
+  }
+    @media (min-width: 768px) and (max-width: 1024px){
+      img{
+        width: 22vw
+      }
+      .secondImg{
+    margin-left: 22vw;
+    margin-top: 55vw;
+    width: 35vw;
+  }
+  .aboutText2{
+    display: initial;
+    position: absolute;
+    margin: 0;
+    margin-top: 77vw;
+    margin-left: -20vw;
+    width: 30vw;
   }
   }
 </style>
