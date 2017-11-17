@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="DivContactComponent">
     <h1>CONTACT</h1>
     <div class="container">
       <a href="https://www.linkedin.com/in/nelu-platonov-9b2823144/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -73,5 +73,33 @@ export default {
     margin-top: -9vw;
     opacity: 0;
     transition: all 1s;
+  }
+  @media (max-width: 320px){
+    i{
+      font-size: 13vw;
+    }
+    i:hover{
+    color: #327F32;
+    font-size: 14.5vw;
+  }
+  a{
+    width: 14vw;
+    margin-left: 13vw;
+    margin-top: 19vw;
+  }
+  .skype{
+    margin-top: 19vw;
+    margin-left: 13vw
+  }
+  .skypeName{
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 20vw;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .DivContactComponent{
+    height: 80vh;
+  }
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div :style="PortfolioComponent">
+  <div :style="PortfolioComponent" class="DivEntirePortfolioComponent">
     <h2>PORTFOLIO</h2>
         <div class="portfolioNav">
           <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSite(-1)"></i>
@@ -101,12 +101,12 @@
       methods: {
         activate(){       // This is just to toggle the bar, we increase the height and display of the tech stack which means we can use transition ! 
           this.active = !this.active;
-          this.active ? this.expandBar.height = "13vw" : this.expandBar.height = "1.6vw";
+          this.active ? this.expandBar.height = "24vh" : this.expandBar.height = "1.6vw";
           this.active ? this.showTech.display = "inline" : this.showTech.display = "none";
         },
         activateFreelance(){
           this.activeFreelance = !this.activeFreelance;
-          this.activeFreelance ? this.expandBarFreelance.height = "13vw" : this.expandBarFreelance.height = "1.6vw";
+          this.activeFreelance ? this.expandBarFreelance.height = "24vh" : this.expandBarFreelance.height = "1.6vw";
           this.activeFreelance ? this.showTechFreelance.display = "inline" : this.showTechFreelance.display = "none";
         },
         PortfolioSite(amount){          // This is to navigate through our sites, we store only 3 sites at one point: previous, current(also highlighted) and next site. We simply add/substract 1 for the index
@@ -252,6 +252,38 @@
     margin-top: 6.5vh;
     margin-left: 5vw;
     margin-right: -5vw;
+  }
+  @media(max-width: 320px){
+    h2{
+      font-size: 5.5vw;
+    }
+    .otherSites{
+      display: none;
+    }
+    .siteLogo{
+      width: 28vw;
+    }
+    .portfolioNav i{
+    margin-top: 6.5vh;
+    margin-left: -9vw;
+    margin-right: 8vw;
+    font-size: 8vw;
+    color: darkorange;
+  }
+  .logo{
+    height: 6.3vw;
+    margin-left: 0.5vw;
+  }
+  .techUsedBar{
+    
+    padding: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 3.5vw;
+    font-size: 3.8vw;
+  }
+  .techUsedBar i{
+    margin-left: 20vw;
+  }
   }
 
 </style>

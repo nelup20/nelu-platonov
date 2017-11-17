@@ -20,5 +20,11 @@
     .footer{
         height: 35vh;
     }
-    
+    @media (max-width: 320px) {
+        div{
+            font-size: 4vw;
+            width: 80vw;
+            margin: 0 auto;
+        }
+    }
 </style>

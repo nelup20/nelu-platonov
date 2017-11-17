@@ -157,4 +157,28 @@
   .skillsComponent{
     height: 110vh;
   }
+  @media(max-width: 320px){
+    .skillsComponent{
+      height: 260vh;
+    }
+    .skillGroup{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .skill{
+    flex-basis: 30vw;
+  }
+ .legend{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    border: 1px solid #327F32;;
+    width: 100vw;
+    margin: 0;
+    margin-left: 0vw;
+    margin-top: -4.5vw;
+    flex-direction: column;
+  }
+  }
 </style>

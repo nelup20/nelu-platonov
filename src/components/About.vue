@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="divaboutComponent">
       <h2>ABOUT ME</h2>
       <div class="container">
         <div class="aboutText">My name is Nelu Ion Platonov. I'm a 20 year old self-taught web developer from Moldova who moved to Belgium in 2011. 
@@ -71,5 +71,31 @@
   }
   div{
      font-family: 'Roboto', sans-serif;
+  }
+  @media(max-width: 320px){
+    .aboutText{
+    display: inline;
+    position: absolute;
+    margin-left: -23vw;
+    width: 62vw;
+  }
+  img{
+    width: 35vw;
+    margin-right: -21vw;
+  }
+  .secondImg{
+    margin-left: 63vw;
+  }
+  .divaboutComponent{
+    height: 380vw;
+  }
+  .aboutText2{
+    display: initial;
+    position: absolute;
+    margin: 0;
+    margin-top: 280vw;
+    margin-left: -76vw;
+    width: 98vw;
+  }
   }
 </style>

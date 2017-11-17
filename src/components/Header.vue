@@ -81,33 +81,37 @@
     }
     .colorOverlay{
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
         background-color: rgba(100, 255, 100, 0.68);
     }
     h1{
         font-family: 'Ubuntu', sans-serif;
         margin: 0;
         color: white;
-        margin-top: 4vh;
-        font-size: 4.5vw;
+        margin-top: 8vh;
+        font-size: 3vw;
     
     }
     h2{
         font-family: 'Ubuntu', sans-serif;
-        margin-top: -3vw;
         color: white;
-        font-size: 4vw
+        font-size: 2.3vw;
+        margin-top: -1vw
     }
 
     p{
         font-family: 'Roboto', sans-serif;
-        font-size: 3vw;
+        font-size: 2vw;
         color: white;
     }
     #personalPic{
         border-radius: 50%;
-        height: 10vh;
+        height: 16vh;
         margin-top: 12vh
+    }
+    .img{
+        height: 100vh;
+        width: 100vw;
     }
     #intro{
         margin-top: 10vh;
@@ -121,7 +125,7 @@
     }
     .routes{
         padding: 2vw;
-        padding-bottom: 2vw;
+        padding-bottom: 3.6vh;
         margin: 2.2vw;
         color: white;
         font-size: 3vw;
@@ -142,30 +146,24 @@
         color: black;
        background-color: white;
     }
-
-@media(min-width: 700px){
+@media(max-width: 320px){
     h1{
-        margin-top: 8vh;
-        font-size: 3vw;
+        font-size: 6vw;
     }
     h2{
-        font-size: 2.3vw;
-        margin-top: -1vw
+        font-size: 4.6vw;
     }
     p{
-        font-size: 2vw;
+        font-size: 5vw;
+       display: inline;
     }
-    .img{
-        height: 100vh;
-        width: 100vw;
+    .routes{
+        padding-bottom: 1.6vw;
+        font-size: 5vw;
     }
-    .colorOverlay{
-        width: 100vw;
-        height: 100vh;
-    }
-    #personalPic{
-        height: 16vh;
-        margin-top: 12vh
+    #navigation{
+        margin-top: 17.8vw;
     }
 }
+
 </style>
