@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import LandingPage from '@/components/routes/LandingPage'
-import Contact from '@/components/routes/Contact'
-import About from '@/components/routes/About'
-import Portfolio from '@/components/routes/Portfolio'
-import Skills from '@/components/routes/Skills'
+import LandingPage from '@/components/LandingPage'
+import Contact from '@/components/Contact'
+import About from '@/components/About'
+import Portfolio from '@/components/Portfolio'
+import Skills from '@/components/Skills'
 
 Vue.use(Router)
 
