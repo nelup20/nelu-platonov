@@ -72,7 +72,7 @@
   div{
      font-family: 'Roboto', sans-serif;
   }
-  @media(max-width: 450px){
+  @media(max-width: 470px){
     .aboutText{
     display: inline;
     position: absolute;
@@ -87,33 +87,108 @@
     margin-left: 63vw;
   }
   .divaboutComponent{
-    height: 380vw;
+    height: 225vh;
   }
   .aboutText2{
     display: initial;
     position: absolute;
     margin: 0;
-    margin-top: 280vw;
+    margin-top: 160vh;
     margin-left: -76vw;
     width: 98vw;
   }
   }
-    @media (min-width: 768px) and (max-width: 1024px){
-      img{
-        width: 22vw
-      }
-      .secondImg{
-    margin-left: 22vw;
-    margin-top: 55vw;
+  @media(min-width: 480px) and (max-width: 640px){
+    .aboutText{
+    display: inline;
+    position: absolute;
+    margin-left: -23vw;
+    width: 62vw;
+  }
+  img{
     width: 35vw;
+    margin-right: -21vw;
+  }
+  .secondImg{
+    margin-left: 63vw;
+  }
+  .divaboutComponent{
+    height: 115vh;
   }
   .aboutText2{
     display: initial;
     position: absolute;
     margin: 0;
-    margin-top: 77vw;
-    margin-left: -20vw;
-    width: 30vw;
+    margin-top: 80vh;
+    margin-left: -76vw;
+    width: 98vw;
+  }
+  }
+  @media(min-width: 768px) and (max-width: 900px){
+    .aboutText{
+    display: inline;
+    position: absolute;
+    margin-left: -23vw;
+    width: 62vw;
+  }
+  img{
+    width: 35vw;
+    margin-right: -21vw;
+  }
+  .secondImg{
+    margin-left: 63vw;
+  }
+  .divaboutComponent{
+    height: 100vh;
+  }
+  .aboutText2{
+    display: initial;
+    position: absolute;
+    margin: 0;
+    margin-top: 60vh;
+    margin-left: -76vw;
+    width: 60vw;
+  }
+  }
+  @media(min-width: 901px) and (max-width: 1024px){
+  
+  .secondImg{
+   margin-top: 30vh;
+  }
+  .divaboutComponent{
+    height: 110vh;
+  }
+  .aboutText2{
+    margin-top: 27vh;
+  }
+  }
+  @media(min-width: 1280px) and (max-width: 1300px){
+  
+  .secondImg{
+   margin-top: 13vh;
+  }
+  .divaboutComponent{
+    height: 113vh;
+  }
+  .aboutText2{
+    margin-top: 10vh;
+  }
+  }
+  @media(min-width: 1366px) and (max-width: 1400px){
+  
+  .secondImg{
+   margin-top: 10vh;
+  }
+  .divaboutComponent{
+    height: 120vh;
+  }
+  .aboutText2{
+    margin-top: 7.3vh;
+  }
+  }
+  @media(min-width: 1650px) and (max-width: 1700px){
+  .divaboutComponent{
+    height: 120vh;
   }
   }
 </style>
