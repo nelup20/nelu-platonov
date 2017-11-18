@@ -74,7 +74,7 @@ export default {
     opacity: 0;
     transition: all 1s;
   }
-  @media (max-width: 450px){
+  @media (max-width: 640px){
     i{
       font-size: 13vw;
     }
@@ -94,7 +94,7 @@ export default {
   .skypeName{
     width: 100vw;
     margin-left: 0vw;
-    margin-top: 20vw;
+    margin-top: 5vh;
     opacity: 0;
     transition: all 1s;
   }
@@ -102,32 +102,65 @@ export default {
     height: 80vh;
   }
   }
+  @media (min-width: 480px) and (max-width: 600px){
+    .DivContactComponent{
+    height: 65vh;
+  }
+  }
   @media (min-width: 768px) and (max-width: 1024px){
     i{
-      font-size: 10vw;
+      font-size: 9vw;
     }
     i:hover{
     color: #327F32;
-    font-size: 14.5vw;
+    font-size: 11.5vw;
   }
   a{
     width: 9vw;
     margin-left: 18.2vw;
-    margin-top: 19vw;
+    margin-top: 13vw;
   }
   .skype{
-    margin-top: 19vw;
+    margin-top: 13vw;
     margin-left: 18.2vw
   }
   .skypeName{
     width: 100vw;
     margin-left: 0vw;
-    margin-top: 20vw;
+    margin-top: 6vh;
     opacity: 0;
     transition: all 1s;
   }
   .DivContactComponent{
-    height: 80vh;
+    height: 70vh;
+  }
+  }
+  @media (min-width: 1024px) and (max-width: 1300px){
+    i{
+      font-size: 9vh;
+    }
+    i:hover{
+    color: #327F32;
+    font-size: 11.5vh;
+  }
+  a{
+    width: 9vw;
+    margin-left: 18.2vw;
+    margin-top: 12vh;
+  }
+  .skype{
+    margin-top: 12vh;
+    margin-left: 18.2vw
+  }
+  .skypeName{
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 6vh;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .DivContactComponent{
+    height: 70vh;
   }
   }
 </style>
