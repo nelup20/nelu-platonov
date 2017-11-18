@@ -146,7 +146,7 @@
         color: black;
        background-color: white;
     }
-@media(max-width: 450px){
+@media(max-width: 400px){
     h1{
         font-size: 6vw;
     }
@@ -162,7 +162,7 @@
         font-size: 5vw;
     }
     #navigation{
-        margin-top: 17.8vw;
+        margin-top: 6.9vw;
     }
 }
 
