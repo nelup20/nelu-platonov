@@ -253,39 +253,76 @@
     margin-left: 5vw;
     margin-right: -5vw;
   }
-  @media(max-width: 450px){
+  @media(max-width: 400px){
     h2{
-      font-size: 5.5vw;
+      font-size: 2.8vh;
     }
     .otherSites{
       display: none;
     }
     .siteLogo{
-      width: 28vw;
+      width: 20vh;
     }
     .portfolioNav i{
     margin-top: 6.5vh;
-    margin-left: -9vw;
-    margin-right: 8vw;
-    font-size: 8vw;
+    margin-left: -7vh;
+    margin-right: 7vh;
+    font-size: 6vh;
     color: darkorange;
   }
   .logo{
-    height: 6.3vw;
-    margin-left: 0.5vw;
+    height: 5vh;
+    margin-left: 0.3vh;
   }
   .techUsedBar{
     
-    padding: 2vw;
-    padding-left: 2vw;
-    padding-bottom: 3.5vw;
-    font-size: 3.8vw;
+    padding: 1.5vh;
+    padding-left: 1.8vh;
+    padding-bottom: 3vh;
+    font-size: 2.6vh;
   }
   .techUsedBar i{
-    margin-left: 20vw;
+    margin-left: 22vh;
   }
   }
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media(min-width: 480px) and (max-width: 650px){
+    h2{
+      font-size: 2.6vh;
+    }
+    .otherSites{
+      display: none;
+    }
+    .siteLogo{
+      width: 18.5vh;
+    }
+    .portfolioNav i{
+    margin-top: 6.5vh;
+    margin-left: -7vh;
+    margin-right: 7vh;
+    font-size: 4vh;
+    color: darkorange;
+  }
+  .logo{
+    height: 3.4vh;
+    margin-left: 0.3vh;
+  }
+  .techUsedBar{
+    
+    padding: 1vh;
+    padding-left: 1.8vh;
+    padding-bottom: 2vh;
+    font-size: 2vh;
+  }
+  .techUsedBar i{
+    margin-left: 15.3vh;
+  }
+  }
+  @media(min-width: 640px) and (max-width: 700px){
+    .techUsedBar i{
+    margin-left: 26.3vh;
+  }
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
     h2{
       font-size: 4.5vw;
     }
@@ -327,6 +364,65 @@
     margin-left: 29.5vw;
   }
 }
-
+@media (min-width: 1024px) and (max-width: 1365px){
+    h2{
+      font-size: 3vh;
+    }
+    .otherSites{
+    height: 9vh;
+    width: 10vh;
+    margin-top: 4vh;
+    box-shadow: 1px 1px 7px black;
+    cursor: pointer;
+  }
+  .siteLogo{
+    height: 16.5vh;
+    width: 18vh ;
+    border-radius: 0%;
+    box-shadow: 1px 1px 7px black;
+    margin-bottom: 3vh;
+    transition: all 0.5s;
+  }
+  .portfolioNav i{
+    margin-top: 6.5vh;
+    margin-left: -7vw;
+    margin-right: 8vw;
+    font-size: 4vw;
+    color: darkorange;
+  }
+  #leftArrow{
+    margin-top: 6.5vh;
+    margin-left: 5vw;
+    margin-right: -5vw;
+  }
+  .techUsedBar{
+    
+    padding: 2vh;
+    padding-left: 2vh;
+    padding-bottom: 3.2vh;
+    font-size: 2.6vh;
+  }
+  .techUsedBar i{
+    margin-left: 38vmax;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1400px){
+  h2{
+      font-size: 3.3vh;
+    }
+    .logo{
+    height: 4vh;
+    margin-left: 0.3vh;
+  }
+}
+@media (min-width: 1650px) and (max-width: 1700px){
+  h2{
+      font-size: 3.3vh;
+    }
+    .logo{
+    height: 3.8vh;
+    margin-left: 0.3vh;
+  }
+}
 </style>
 <!--  height of bar when expanded height: 11vw; expandtech height: 10vw -->
