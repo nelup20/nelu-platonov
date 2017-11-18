@@ -157,7 +157,7 @@
   .skillsComponent{
     height: 110vh;
   }
-  @media(max-width: 450px){
+  @media(max-width: 460px){
     .skillsComponent{
       height: 260vh;
     }
@@ -181,9 +181,39 @@
     flex-direction: column;
   }
   }
+  @media(min-width: 470px) and (max-width: 700px){
+    .skillsComponent{
+      height: 190vh;
+    }
+    .skillGroup{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .skill{
+    flex-basis: 30vw;
+  }
+ .legend{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    border: 1px solid #327F32;;
+    width: 100vw;
+    margin: 0;
+    margin-left: 0vw;
+    margin-top: -4.5vw;
+    flex-direction: column;
+  }
+  }
+  @media(min-width: 640px) and (max-width: 700px){
+    .skillsComponent{
+      height: 205vh;
+    }
+  }
+  
   @media (min-width: 768px) and (max-width: 1024px){
     .skillsComponent{
-      height: 140vh;
+      height: 160vh;
     }
     .legend{
     font-family: 'Roboto', sans-serif;
@@ -203,6 +233,19 @@
   }
   .skill{
     flex-basis: 20vw;
+  }
+  }
+  @media (min-width: 1024px) and (max-width: 1300px){
+    .skillsComponent{
+      height: 180vh;
+    }
+  }
+  @media (min-width: 1280px) and (max-height: 800px){
+    .skillsComponent{
+      height: 120vh;
+    }
+    .skill{
+    flex-basis: 8vw;
   }
   }
 </style>
