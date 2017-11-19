@@ -104,6 +104,22 @@
       width: 100vw;
     }
   }
+  @media(min-width: 360px) and (max-width: 361px){
+    .aboutText2{
+        margin-top: 180vw;
+      }
+      .divaboutComponent{
+    height: 280vw;
+  }
+  }
+    @media(min-width: 412px) and (max-width: 414px){
+      .aboutText2{
+        margin-top: 160vw;
+      }
+      .divaboutComponent{
+    height: 235vw;
+  }
+    }
   @media(min-width: 480px) and (max-width: 640px){
     .aboutText{
     display: inline;
@@ -157,15 +173,19 @@
   }
   }
   @media(min-width: 901px) and (max-width: 1024px){
-  
+  img{
+    width: 28vw
+  }
   .secondImg{
-   margin-top: 30vh;
+   margin-top: 13vw;
+   width: 30vw
   }
   .divaboutComponent{
-    height: 110vh;
+    height: 95vw;
   }
   .aboutText2{
-    margin-top: 27vh;
+    margin-top: 11vw;
+    margin-left: 55vw;
   }
   }
   @media(min-width: 1280px) and (max-width: 1300px){

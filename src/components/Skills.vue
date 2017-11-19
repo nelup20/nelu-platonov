@@ -159,7 +159,7 @@
   }
   @media(max-width: 460px){
     .skillsComponent{
-      height: 260vh;
+      height: 400vw;
     }
     .skillGroup{
     display: flex;
@@ -237,7 +237,7 @@
   }
   @media (min-width: 1024px) and (max-width: 1300px){
     .skillsComponent{
-      height: 180vh;
+      height: 180vw;
     }
   }
   @media (min-width: 1280px) and (max-height: 800px){

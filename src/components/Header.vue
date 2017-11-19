@@ -146,7 +146,7 @@
         color: black;
        background-color: white;
     }
-@media (min-width: 320px) and (max-width: 410px){
+@media (min-width: 320px) and (max-width: 1024px){
     h1{
         font-size: 8vw;
     }
@@ -165,83 +165,7 @@
         margin-top: 11vw;
     }
 }
-@media (min-width: 430px) and (max-width: 480px){
-    .routes{
-        padding-bottom: 1.3vh;
-        font-size: 3vh;
-    }
-    #navigation{
-        margin-top:19.6vh;
-    }
-    h1{
-        font-size: 4vh;
-    }
-    h2{
-        font-size: 3vh;
-    }
-    p{
-        font-size: 3vh;
-       display: inline;
-    }
-}
-@media (min-width: 600px) and (max-width: 699px){
-    .routes{
-        padding-bottom: 1.5vh;
-        font-size: 3.2vh;
-    }
-    #navigation{
-        margin-top: 29.2vh;
-    }
-    h1{
-        font-size: 3.6vh;
-    }
-    h2{
-        font-size: 2.7vh;
-    }
-    p{
-        font-size: 2.4vh;
-       display: inline;
-    }
-}
 
-@media (min-width: 700px) and (max-width: 1023px){
-    h1{
-        font-size: 5.9vh;
-    }
-    h2{
-        font-size: 4vh;
-    }
-    p{
-        font-size: 3.3vh;
-       display: inline;
-    }
-    .routes{
-        padding-bottom: 1.6vh;
-        font-size: 3.5vh;
-    }
-    #navigation{
-        margin-top: 22.1vh;
-    }
-}
-@media (min-width: 1024px) and (max-width: 1279px){
-    h1{
-        font-size: 6.5vh;
-    }
-    h2{
-        font-size: 4.5vh;
-    }
-    p{
-        font-size: 3.5vh;
-       display: inline;
-    }
-    .routes{
-        padding-bottom: 1.9vh;
-        font-size: 4vh;
-    }
-    #navigation{
-        margin-top: 19.2vh;
-    }
-}
 @media (min-width: 1280px) and (max-width: 1400px){
     h1{
         font-size: 5vh;
