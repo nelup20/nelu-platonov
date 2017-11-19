@@ -14,12 +14,12 @@
               </div>
               <div id="navigation">
                  
-                  <router-link @click.native="highlightRoute('Portfolio')" :class="{ highlight: routes.Portfolio }" to="/portfolio" class="routes"><i class="fa fa-code" aria-hidden="true"></i></router-link>
-                  <router-link @click.native="highlightRoute('Skills')" :class="{ highlight: routes.Skills }" to="/skills" class="routes"><i class="fa fa-check-square" aria-hidden="true"></i>
+                  <router-link @click.native="highlightRoute('Portfolio')" :class="{ highlight: routes.Portfolio }" to="/portfolio" class="routes" id="IconCode" ><i class="fa fa-code" aria-hidden="true"></i></router-link>
+                  <router-link @click.native="highlightRoute('Skills')" :class="{ highlight: routes.Skills }" to="/skills" class="routes" id="IconSkills"><i class="fa fa-check-square" aria-hidden="true"></i>
 </router-link>
-                  <router-link @click.native="highlightRoute('About')" :class="{ highlight: routes.About }" to="/about" class="routes"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  <router-link @click.native="highlightRoute('About')" :class="{ highlight: routes.About }" to="/about" class="routes" id="IconAbout"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
 </router-link>
-                  <router-link @click.native="highlightRoute('Contact')" :class="{ highlight: routes.Contact }" to="/contact" class="routes"><i class="fa fa-envelope" aria-hidden="true"></i>
+                  <router-link @click.native="highlightRoute('Contact')" :class="{ highlight: routes.Contact }" to="/contact" class="routes" id="IconContact"><i class="fa fa-envelope" aria-hidden="true"></i>
 </router-link>
               </div>
               </div>
@@ -73,7 +73,6 @@
        
     }
     .img{
-        height: 80v;
         width: 100vw;
         background-image: url("../assets/background-code.jpg");
         background-size: cover;
@@ -120,13 +119,11 @@
         margin: 0;
         text-shadow: 0.025vh 0.025vh black
     }
-    #navigation{
-        margin-top: 17.8vh;
-    }
     .routes{
+        position: absolute;
+        bottom: 0;
         padding: 2vw;
         padding-bottom: 3.6vh;
-        margin: 2.2vw;
         color: white;
         font-size: 3vw;
         border-radius: 8%;
@@ -141,6 +138,21 @@
        background-color: white;
 
         
+    }
+    #IconCode{
+        left: 29.2vw;
+    }
+    #IconSkills{
+        left: 37vw;
+        margin-left: 4vw;
+    }
+    #IconAbout{
+        left: 48.3vw;
+        margin-left: 4vw;
+    }
+    #IconContact{
+        left: 60vw;
+        margin-left: 4vw;
     }
     .highlight{
         color: black;
@@ -159,11 +171,9 @@
     }
     .routes{
         padding-bottom: 1.8vw;
-        font-size: 6.8vw;
+        font-size: 3.8vw;
     }
-    #navigation{
-        margin-top: 11vw;
-    }
+
 }
 
 @media (min-width: 1280px) and (max-width: 1400px){
