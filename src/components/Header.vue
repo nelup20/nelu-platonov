@@ -3,14 +3,14 @@
       <div class="img">
           <div class="colorOverlay">
                 <img src="../assets/personalPic.jpg" alt="" id="personalPic">
-              <div>
+              <div class="secondOverlay">
               <h1>FULL - STACK</h1><br>
               <h2>WEB DEVELOPER</h2>
               <div>
                   <div id="intro">
               <p>Hi! I'm Nelu Platonov, a passionate self-taught web developer.</p>
               <p>You can navigate below to my portfolio, skills, about and contact page.</p>
-              <p>Thanks for stopping by and have a wonderful day <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+              <p>Thanks for stopping by and have a wonderful day.</p>
               </div>
               <div id="navigation">
                  
@@ -76,24 +76,30 @@
         width: 100vw;
         background-image: url("../assets/background-code.jpg");
         background-size: cover;
-        background-repeat: no-repeat
+        background-repeat: no-repeat;
+        opacity: 1;
     }
     .colorOverlay{
         width: 100vw;
         height: 100vh;
-        background-color: rgba(100, 255, 100, 0.68);
+      background: rgba(52, 148, 230, 0.68);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #EC6EAD, rgba(52, 148, 230, 0.68));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 230, 0.68)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     }
     h1{
         font-family: 'Ubuntu', sans-serif;
         margin: 0;
-        color: white;
+        color: rgba(255,255,255, 1);
         margin-top: 8vh;
         font-size: 3vw;
+       
     
     }
     h2{
         font-family: 'Ubuntu', sans-serif;
-        color: white;
+        color: rgba(255,255,255, 1);
         font-size: 2.3vw;
         margin-top: -1vw
     }
@@ -101,7 +107,8 @@
     p{
         font-family: 'Roboto', sans-serif;
         font-size: 2vw;
-        color: white;
+        color: rgba(255,255,255, 1);
+        
     }
     #personalPic{
         border-radius: 50%;
@@ -117,14 +124,13 @@
     }
     #intro p{
         margin: 0;
-        text-shadow: 0.025vh 0.025vh black
     }
     .routes{
         position: absolute;
         bottom: 0;
         padding: 2vw;
         padding-bottom: 3.6vh;
-        color: white;
+        color: rgba(255,255,255, 1);
         font-size: 3vw;
         border-radius: 8%;
         border-bottom-left-radius: 0%;
