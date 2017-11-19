@@ -158,6 +158,7 @@
         color: black;
        background-color: white;
     }
+    
 @media (min-width: 320px) and (max-width: 1024px){
     h1{
         font-size: 8vw;
@@ -190,19 +191,8 @@
         padding-bottom: 2.8vh;
         font-size: 5.3vh;
     }
-    #navigation{
-        margin-top: 19.8vh;
-    }
-}
-@media (min-width: 1280px) and (max-width: 1281px){
-    #navigation{
-        margin-top: 19.4vh;
-    }
 }
 @media (min-width: 1680px) and (max-width: 1681px){
-    #navigation{
-        margin-top: 21.2vh;
-    }
     .routes{
         padding-bottom: 4vh;
         font-size: 4vh;
