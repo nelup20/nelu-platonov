@@ -10,6 +10,7 @@
           <br>
           <br>
           <br>
+          <span class="middleAboutText">
           I love solving tough problems and my stubborn personality helps that a lot, I won't quit until I solve the problem.
           I have a lot of big dreams and hopes, which I'll keep working towards. I aim to become the best in web development 
           and in life in general.
@@ -18,6 +19,7 @@
           <br>
           Meeting new people is a lot of fun, I feel that I can easily get along with a lot of people. At the very least I can make sure
           cooperation is at it's best.
+          </span>
         </div>
         <img src="../assets/me.png" alt="">
         <img src="../assets/me2.png" class="secondImg" alt="">
@@ -97,6 +99,10 @@
     margin-left: -76vw;
     width: 98vw;
   }
+  .middleAboutText{
+      display: inline-block;
+      width: 100vw;
+    }
   }
   @media(min-width: 480px) and (max-width: 640px){
     .aboutText{

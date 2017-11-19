@@ -148,21 +148,21 @@
     }
 @media (min-width: 320px) and (max-width: 410px){
     h1{
-        font-size: 5vh;
+        font-size: 8vw;
     }
     h2{
-        font-size: 4vh;
+        font-size: 6vw;
     }
     p{
-        font-size: 3.5vh;
+        font-size: 5vw;
        display: inline;
     }
     .routes{
-        padding-bottom: 1.4vh;
-        font-size: 4.5vh;
+        padding-bottom: 1.8vw;
+        font-size: 6.8vw;
     }
     #navigation{
-        margin-top: 12.3vh;
+        margin-top: 11vw;
     }
 }
 @media (min-width: 430px) and (max-width: 480px){

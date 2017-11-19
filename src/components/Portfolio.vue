@@ -261,28 +261,28 @@
       display: none;
     }
     .siteLogo{
-      width: 20vh;
+      width: 30vw;
     }
     .portfolioNav i{
-    margin-top: 6.5vh;
-    margin-left: -7vh;
-    margin-right: 7vh;
-    font-size: 6vh;
+    margin-top: 9vw;
+    margin-left: -7vw;
+    margin-right: 7vw;
+    font-size: 8vw;
     color: darkorange;
   }
   .logo{
-    height: 5vh;
-    margin-left: 0.3vh;
+    height: 6.3vw;
+    margin-left: 0.3vw;
   }
   .techUsedBar{
     
-    padding: 1.5vh;
-    padding-left: 1.8vh;
-    padding-bottom: 3vh;
-    font-size: 2.6vh;
+    padding: 1.5vw;
+    padding-left: 1.8vw;
+    padding-bottom: 3vw;
+    font-size: 2.6vw;
   }
   .techUsedBar i{
-    margin-left: 22vh;
+    margin-left: 32vw;
   }
   }
   @media(min-width: 480px) and (max-width: 650px){
