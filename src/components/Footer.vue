@@ -32,4 +32,9 @@
             height: 50vh;
         }
     }
+    @media (min-width: 1280px){
+        .footer{
+            width: 100vw;
+        }
+    }
 </style>

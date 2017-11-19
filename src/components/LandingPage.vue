@@ -41,5 +41,10 @@ a {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Vue.js_Logo.svg/300px-Vue.js_Logo.svg.png")
   }
 }
+@media(min-width: 1280px){
+  .hello{
+    width: 100vw;
+  }
+}
 </style>
 

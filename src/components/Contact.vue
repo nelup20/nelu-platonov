@@ -163,4 +163,9 @@ export default {
     height: 70vh;
   }
   }
+  @media (min-width: 1280px){
+    .DivContactComponent{
+      width: 100vw;
+    }
+  }
 </style>

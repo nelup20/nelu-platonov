@@ -217,4 +217,10 @@
     height: 120vh;
   }
   }
+  @media(min-width: 1280px){
+    .divaboutComponent{
+      width: 100vw;
+      height: 110vh;
+    }
+  }
 </style>

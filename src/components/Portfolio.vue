@@ -287,10 +287,10 @@
   }
 @media (min-width: 1366px) and (max-width: 1400px){
   h2{
-      font-size: 3.3vh;
+      font-size: 3vh;
     }
     .logo{
-    height: 4vh;
+    height: 3.5vh;
     margin-left: 0.3vh;
   }
 }
@@ -302,6 +302,38 @@
     height: 3.8vh;
     margin-left: 0.3vh;
   }
+}
+@media (min-width: 1280px){
+  .DivEntirePortfolioComponent{
+    width: 100vw;
+  }
+}
+@media(min-width: 1920px){
+    h2{
+      font-size: 2.2vw;
+    }
+    
+    .siteLogo{
+      width: 10.5vw;
+    }
+    .portfolioNav i{
+    margin-top: 3vw;
+    margin-left: -7vw;
+    margin-right: 7vw;
+    font-size: 3vw;
+    color: darkorange;
+  }
+  .logo{
+    height: 2vw;
+    margin-left: 0.3vw;
+  }
+  .techUsedBar{
+    
+    padding: 0.2vw;
+    padding-left: 1vw;
+    font-size: 1.2vw;
+  }
+
 }
 </style>
 <!--  height of bar when expanded height: 11vw; expandtech height: 10vw -->

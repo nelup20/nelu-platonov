@@ -248,4 +248,9 @@
     flex-basis: 8vw;
   }
   }
+  @media (min-width: 1280px) {
+    .skillsComponent{
+      width: 100vw; 
+    }
+  }
 </style>

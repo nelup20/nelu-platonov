@@ -159,7 +159,7 @@
        background-color: white;
     }
     
-@media (min-width: 320px) and (max-width: 1024px){
+@media (max-width: 760px){
     h1{
         font-size: 8vw;
     }
@@ -205,6 +205,21 @@
     }
     p{
         font-size: 3.5vh;
+    }
+}
+@media (min-width: 1280px) {
+    .area{
+        height: 98.2vh;
+       
+    }
+    .img{
+        height: 98.2vh;
+        background-image: url("../assets/background-code.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    .colorOverlay{
+        height: 98.2vh;
     }
 }
 </style>
