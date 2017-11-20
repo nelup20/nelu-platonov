@@ -69,12 +69,10 @@
             transition: "height 0.3s"
           },
           showTech: {
-            opacity: "0",
             display: "none",
             transition: 'display 0.2s'
           },
           showTechFreelance: {
-            opacity: "0",
             display: "none",
             transition: 'display 0.2s'
           },
