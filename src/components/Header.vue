@@ -83,7 +83,7 @@
         width: 100vw;
         height: 100vh;
       background: rgba(52, 148, 230, 0.68);  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #EC6EAD, rgba(52, 148, 230, 0.68));  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 230, 0.68));  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 230, 0.68)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
