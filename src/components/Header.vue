@@ -213,16 +213,13 @@ background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 
         font-size: 3.5vh;
     }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1600px) {
     .area{
         height: 98.2vh;
        
     }
     .img{
         height: 98.2vh;
-        background-image: url("../assets/background-code.jpg");
-        background-size: cover;
-        background-repeat: no-repeat
     }
     .colorOverlay{
         height: 98.2vh;
