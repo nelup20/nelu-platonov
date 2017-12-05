@@ -69,14 +69,14 @@
             transition: "height 0.3s"
           },
           showTech: {
-            opacity: "0",
             display: "none",
-            transition: 'display 0.2s'
+            transition: 'display 0.2s',
+            WebkitTransition: "display 0.2s"
           },
           showTechFreelance: {
-            opacity: "0",
             display: "none",
-            transition: 'display 0.2s'
+            transition: 'display 0.2s',
+            WebkitTransition: "display 0.2s"
           },
           highlightedSiteIndex: 0,          // These "Indexes" simply indicate which site is the currently highlighted one, basically which one to display
           highlightedSiteIndexFreelance: 0, // the used tech stack for. We use this index (obviously add or substract 1 when navigating) to get data from the array in the store.
@@ -227,6 +227,7 @@
     box-shadow: 1px 1px 7px black;
     margin-bottom: 3vh;
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
   .siteLogo:hover{
     border-radius: 50%;
