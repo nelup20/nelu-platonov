@@ -7,12 +7,12 @@ export const store = new Vuex.Store({
     state: {
         sites: [
             {
-                name: 'neluplatonov.com',
-                frontEnd: ['html','css','javascript','vue'],
+                name: 'elrestaurante',
+                frontEnd: ['html','css','javascript'],
                 backEnd: ['node','heroku'],
-                development: ['git','npm','babel','webpack'],
-                img: 'testSite1',
-                link: 'https://www.google.com'
+                development: ['git','npm'],
+                img: 'elrestaurante1',
+                link: 'https://el-restaurante.herokuapp.com/'
             },
             {
                 name: 'meme.com',
