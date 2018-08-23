@@ -2,7 +2,7 @@
   <div class="area">
       <div class="img">
           <div class="colorOverlay">
-                <img src="../assets/personalPic.jpg" alt="" id="personalPic">
+                <img src="" alt="" id="personalPic">
               <div class="secondOverlay">
               <h1>FULL - STACK</h1><br>
               <h2>WEB DEVELOPER</h2>

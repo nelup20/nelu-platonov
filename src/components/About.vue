@@ -2,36 +2,20 @@
   <div class="divaboutComponent">
       <h2>ABOUT ME</h2>
       <div class="container">
-        <div class="aboutText">My name is Nelu Ion Platonov. I'm a 20 year old self-taught web developer from Moldova who moved to Belgium in 2011. 
-          I enjoy learning a lot, especially about finance & technology, as well as my fair share of biology and cosmology. Currently I am studying in my 1st year
-          for a bachelor of Business Administration at the KU Leuven university. My hobbies include: reading, playing the guitar (5 years), bodybuilding (3 years), chess, programming 
-          and cryptocurrency trading. My native languages are English and Romanian, I also know Russian at a good level (learnt it in middle school) and Dutch at a very good level
-          (finished high school in West Flanders).
+        <div class="aboutText">My name is Nelu Ion Platonov. I'm a 21 year old self-taught web developer from Moldova who moved to Belgium in 2011. 
+          I enjoy learning a lot, especially about finance & technology, as well as my fair share of biology and cosmology. Currently I am studying in my 2nd year
+          for a bachelor of Business Administration at the KU Leuven university. <br><br> My hobbies include: reading, playing the guitar (6 years), bodybuilding (3 years), chess, programming 
+          and investing. My native languages are English and Romanian, I also know Russian at a good level and Dutch at a very good level.
           <br>
           <br>
           <br>
           <span class="middleAboutText">
-          I love solving tough problems and my stubborn personality helps that a lot, I won't quit until I solve the problem.
+          I love solving tough problems and my stubborn personality helps that a lot, I won't quit until I solve the problem at hand.
           I have a lot of big dreams and hopes, which I'll keep working towards. I aim to become the best in web development 
           and in life in general.
-          <br>
-          <br>
-          <br>
-          Meeting new people is a lot of fun, I feel that I can easily get along with a lot of people. At the very least I can make sure
-          cooperation is at it's best.
           </span>
         </div>
-        <img src="../assets/me.png" alt="">
-        <img src="../assets/me2.png" class="secondImg" alt="">
-        <div class="aboutText2"><br>
-          One of my biggest dreams that I've had since I was 10 years old is to move to or at least visit the United States. I feel like I would be at home there. I have a strong sense of patriotism when it comes to the US,
-          which I don't feel as strongly for my native country. 
-          <br>
-          <br>
-          <br>
-          Hope you enjoyed looking at my site, thanks for stopping by ! <i class="fa fa-smile-o" aria-hidden="true"></i>
-
-        </div>
+        <img src="../assets/me3.jpg" alt="">    
       </div>
   </div>
 </template>
@@ -89,7 +73,7 @@
     margin-left: 63vw;
   }
   .divaboutComponent{
-    height: 225vh;
+    height: 100vh;
   }
   .aboutText2{
     display: initial;
@@ -146,6 +130,12 @@
     width: 98vw;
   }
   }
+  @media(min-width: 640px) and (max-width: 767px){
+    img{
+    width: 40vw;
+    margin-right: -21vw;
+  }
+  }
   @media(min-width: 768px) and (max-width: 900px){
     .aboutText{
     display: inline;
@@ -161,7 +151,7 @@
     margin-left: 63vw;
   }
   .divaboutComponent{
-    height: 100vh;
+    height: 70vh;
   }
   .aboutText2{
     display: initial;
@@ -181,7 +171,7 @@
    width: 30vw
   }
   .divaboutComponent{
-    height: 95vw;
+    height: 80vh;
   }
   .aboutText2{
     margin-top: 11vw;
@@ -194,10 +184,11 @@
    margin-top: 13vh;
   }
   .divaboutComponent{
-    height: 113vh;
+    height: 60vh;
   }
   .aboutText2{
     margin-top: 10vh;
+    font-size: 
   }
   }
   @media(min-width: 1366px) and (max-width: 1400px){
@@ -220,7 +211,7 @@
   @media(min-width: 1280px){
     .divaboutComponent{
       width: 100vw;
-      height: 110vh;
+      height: 60vh;
     }
   }
 </style>

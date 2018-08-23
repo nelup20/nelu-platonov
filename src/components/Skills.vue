@@ -29,7 +29,7 @@
       <div class="skill green">Vue.js</div>
       </div>
       <div class="skillGroup">
-      <div class="skill yellow">Node.js</div>
+      <div class="skill green">Node.js</div>
       <div class="skill green">Express</div>
       <div class="skill yellow">MongoDB</div>
       <div class="skill red">PHP</div>
@@ -39,17 +39,17 @@
       <div class="skillGroup">
       <div class="skill green">NPM</div>
       <div class="skill yellow">Git</div>
-      <div class="skill red">Sass</div>
-      <div class="skill red">Webpack</div>
+      <div class="skill green">Sass</div>
+      <div class="skill yellow">Webpack</div>
       <div class="skill red">Apache</div>
       <div class="skill red">Nginx</div>
       </div>
       <div class="skillGroup">
-      <div class="skill red">Babel</div>
+      <div class="skill yellow">Babel</div>
       <div class="skill red">Wordpress</div>
       <div class="skill red">Drupal</div>
       <div class="skill red">Semantic</div>
-      <div class="skill red">Linux</div>
+      <div class="skill yellow">Linux</div>
       <div class="skill red">React</div>
       </div>
       <div class="skillGroup">
@@ -57,8 +57,8 @@
       <div class="skill red">Azure</div>
       <div class="skill red">Digital Ocean</div>
       <div class="skill red">Scaleway</div>
-      <div class="skill red">Heroku</div>
-      <div class="skill red">Firebase</div>
+      <div class="skill yellow">Heroku</div>
+      <div class="skill yellow">Firebase</div>
       </div>
       <h1>LANGUAGES</h1>
       <div class="skillGroup languages">

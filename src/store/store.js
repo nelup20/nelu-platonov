@@ -15,12 +15,12 @@ export const store = new Vuex.Store({
                 link: 'https://el-restaurante.herokuapp.com/'
             },
             {
-                name: 'meme.com',
-                frontEnd: ['html','css',"javascript"],
-                backEnd: ['s3'],
-                development: ['git'],
-                img: 'testSite2',
-                link: 'https://www.facebook.com'
+                name: 'wattz',
+                frontEnd: ['html','bootstrap',"jquery"],
+                backEnd: ['node', 'heroku', 'mongodb', 'mlab'],
+                development: ['git', 'npm'],
+                img: 'wattz',
+                link: 'https://wattz.herokuapp.com/'
             },
             {
                 name: 'meme.com',

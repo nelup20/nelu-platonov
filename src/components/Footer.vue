@@ -2,7 +2,7 @@
   <div class="footer">
       <div>
       <h3>I'm currently looking for a junior front-end, back-end or full-stack job. </h3>
-      <h3>If I am a suitable candidate please do contact me at:</h3>
+      <h3>If I'm a suitable candidate you can contact me at:</h3>
       <h3 id="email">nplatonovbusiness@gmail.com</h3>
       </div>
   </div>
