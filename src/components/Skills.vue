@@ -1,75 +1,47 @@
 <template>
   <div class="skillsComponent">
     <div class="topPart">
-      <h1>SKILLS</h1>
-      <div class="legend">
-        <h4>Legend</h4>
-        <div class="container">
-          <div id="greenSkill"></div>
-          <div>Very comfortable using it and good knowledge</div>
-        </div>
-        <div class="container">
-          <div id="yellowSkill"></div>
-          <div>Decentely comfortable and decent knowledge</div>
-        </div>
-        <div>
-        <div class="container">
-          <div id="redSkill"></div>
-          <div>Not comfortable yet but still learning</div>
-        </div>
-        </div>
-        </div>
+      <h1>Proficient</h1>
         </div>
       <div class="skillGroup">
-      <div class="skill green">HTML5</div>
-      <div class="skill green">CSS3</div>
-      <div class="skill green">Javascript (ES6)</div>
-      <div class="skill green">Bootstrap</div>
-      <div class="skill green">jQuery</div>
-      <div class="skill green">Vue.js</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">Javascript (ES6)</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">jQuery</div>
+      <div class="skill">Vue.js</div>
       </div>
       <div class="skillGroup">
-      <div class="skill green">Node.js</div>
-      <div class="skill green">Express</div>
-      <div class="skill yellow">MongoDB</div>
-      <div class="skill red">PHP</div>
-      <div class="skill red">Laravel</div>
-      <div class="skill red">MySQL</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">NPM</div>
+      <div class="skill">Git</div>
+      <div class="skill">Heroku</div>
+      </div>
+      <h1>Familiar</h1>
+      <div class="skillGroup">
+      <div class="skill">React</div>
+      <div class="skill">Sass</div>
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+      <div class="skill">PHP</div>
+      <div class="skill">Wordpress</div>
       </div>
       <div class="skillGroup">
-      <div class="skill green">NPM</div>
-      <div class="skill yellow">Git</div>
-      <div class="skill green">Sass</div>
-      <div class="skill yellow">Webpack</div>
-      <div class="skill red">Apache</div>
-      <div class="skill red">Nginx</div>
+      <div class="skill">Jest</div>
+      <div class="skill">Puppeteer</div>
+      <div class="skill">AWS</div>
+      <div class="skill">DigitalOcean</div>
+      <div class="skill">Redis</div>
+      <div class="skill">Linux</div>
       </div>
-      <div class="skillGroup">
-      <div class="skill yellow">Babel</div>
-      <div class="skill red">Wordpress</div>
-      <div class="skill red">Drupal</div>
-      <div class="skill red">Semantic</div>
-      <div class="skill yellow">Linux</div>
-      <div class="skill red">React</div>
-      </div>
-      <div class="skillGroup">
-      <div class="skill red">AWS</div>
-      <div class="skill red">Azure</div>
-      <div class="skill red">Digital Ocean</div>
-      <div class="skill red">Scaleway</div>
-      <div class="skill yellow">Heroku</div>
-      <div class="skill yellow">Firebase</div>
-      </div>
-      <h1>LANGUAGES</h1>
+      <h1>Languages (fluent)</h1>
       <div class="skillGroup languages">
-      <div class="skill green">English</div>
-      <div class="skill green">Romanian</div>
-      <div class="skill green">Dutch</div>
-      <div class="skill yellow">Russian</div>
-      <div class="skill red">French</div>
-      <div class="skill red">German</div>
-      <div class="skill red">Spanish</div>
-      <div class="skill red">Mandarin</div>
+      <div class="skill">English (native)</div>
+      <div class="skill">Romanian (native)</div>
+      <div class="skill">Dutch</div>
+      <div class="skill">Russian</div>
       </div>
   </div>
 </template>
@@ -94,9 +66,10 @@
     margin: 2vw;
     margin-left: 4vw;
     margin-right: 4vw;
-    border: 1px solid #327F32;;
+    border: 2px solid #327F32;;
     padding: 1.5vh;
     width: 5vw;
+    font-weight: 600;
   }
   .legend{
     font-family: 'Roboto', sans-serif;

@@ -4,14 +4,13 @@
     <div class="container">
       <a href="https://www.linkedin.com/in/nelu-platonov-9b2823144/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
       <a href="https://github.com/nelup20" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://stackoverflow.com/users/7815997/triseth" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-      </div>
-      <div class="container">
-      <a href="https://www.instagram.com/neluplatonov/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="mailto:nplatonovbusiness@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       <i class="fa fa-skype skype" aria-hidden="true" @click="popup"></i>
-      </div>
+      
       <div class="skypeName" :style="show">Skype: platon.nelu@yahoo.com</div>
+      </div>
+      
+      
+     
   </div>
 </template>
 <script>
@@ -68,11 +67,12 @@ export default {
     font-family: 'Roboto', sans-serif;
   }
   .skypeName{
-    width: 17vw;
-    margin-left: 68vw;
-    margin-top: -9vw;
+    width: 7vw;
     opacity: 0;
     transition: all 1s;
+    position: relative;
+    top: 6vw;
+    left: -8vw;
   }
   @media (max-width: 640px){
     i{
@@ -166,6 +166,7 @@ export default {
   @media (min-width: 1280px){
     .DivContactComponent{
       width: 100vw;
+      height: 40vw;
     }
   }
 </style>

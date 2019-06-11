@@ -1,6 +1,6 @@
 <template>
   <div :style="PortfolioComponent" class="DivEntirePortfolioComponent">
-    <h2>PORTFOLIO</h2>
+    <h2>Portfolio</h2>
         <div class="portfolioNav">
           <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSite(-1)"></i>
         <div>
@@ -25,7 +25,7 @@
        </div>
         </div>
       </div>
-      <h2>FREELANCE JOBS</h2>
+      <h2>More to come:</h2>
       <div class="portfolioNav">
           <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSiteFreeLance(-1)"></i>
         <div>
