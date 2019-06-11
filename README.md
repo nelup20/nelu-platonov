@@ -1,6 +1,6 @@
 # This code is absolutely awful and I'll explain why and what could be better
 
-I created my main 3 personal projects (The personal website, fake/mock restaurant site and the fake/mock electricity company site) roughly 7-9 months after I started learning programming. As I'm updating this Readme it's been 1.5 years later and the code you will see doesn't represent my current level of skill and knowledge.
+I created my main 3 personal projects (The personal website, fake/mock restaurant site and the fake/mock electricity company site) roughly 7-9 months after I started learning programming. As I'm updating this Readme it's been 1.5 years and the code you will see doesn't represent my current level of skill and knowledge.
 
 I haven't managed to do any serious refactoring or improvements due to University and for now can only mention what was done badly and what can be improved as well as potentially what other technologies I could've used to improve the projects.
 
@@ -17,4 +17,4 @@ I haven't managed to do any serious refactoring or improvements due to Universit
 - [ ] Commits were always done on Master branch, to simulate a professional working environment I should've commited on separate branches
 - [ ] Should have created the Front-End's Design/CSS from actual Photoshop/Sketch files or any other design tool (to know exact measurements/sizes in px) instead of using plain images/JPEGs and eyeballing the sizes and proportions
 
-And there may be potentially many more things that could be improved (perhaps using Docker but I feel like that would be overkill for these small projects and I already got frustrated a couple of times trying to get it to work correctly for other things), that's one of the fun parts of Software Development, there's always more new stuff to learn. 
+And there may be potentially many more things that could be improved (perhaps using Docker but I feel like that would be overkill for these small projects), that's one of the fun parts of Software Development, there's always more new stuff to learn. 
