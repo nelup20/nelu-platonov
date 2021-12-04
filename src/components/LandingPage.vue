@@ -1,11 +1,9 @@
-<!-- This is just the landing page to just show my love for Vue and show off how cool particleJS and just JS 
-    libraries in general are. The ecosystem is amazing even though it's huge. -->
 
 <template>
   <div class="hello">
-   <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> 
-   
-     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+   <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles -->
+
+     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
   </div>
 </template>
 

@@ -2,25 +2,14 @@
   <div class="divaboutComponent">
       <h2>ABOUT ME</h2>
       <div class="container">
-        <div class="aboutText">My name is Nelu Ion Platonov. I'm a 22 year old self-taught web developer from Moldova who moved to Belgium in 2011. 
-          I enjoy learning a lot, especially about finance & technology, as well as my fair share of biology and cosmology. Currently I'm studying in my 2nd year
-          for a BSc of Business Administration at the KU Leuven. <br><br> My hobbies include: reading, playing the guitar (7 years), weight lifting, chess, programming 
-          and investing. My native languages are English and Romanian. I'm also fluent in Russian and Dutch. My French is at an indermediate level but I will strive to improve it. I'm also currently
-          learning Japanese.
           <br>
+          If you want to see more checkout my <a href="https://github.com/nelup20">GitHub</a>
           <br>
-          <br>
-          <span class="middleAboutText">
-          I love solving tough problems and my stubborn personality helps a lot, because I won't quit until I solve the problem at hand. Lastly I want to mention that I aim to become a great Software Engineer and also attempt
-          to become proficient in Machine Learning. As such I'm planning to apply to Georgia Institute of Technology's Online Master of Science in Computer Science after my current undergraduate degree. 
-          </span>
         </div>
-        <img src="../assets/me3.jpg" alt="">    
       </div>
-  </div>
 </template>
 <script>
-    
+
 </script>
 <style scoped>
   h2{
@@ -179,20 +168,16 @@
   }
   }
   @media(min-width: 1280px) and (max-width: 1300px){
-  
+
   .secondImg{
    margin-top: 13vh;
   }
   .divaboutComponent{
     height: 60vh;
   }
-  .aboutText2{
-    margin-top: 10vh;
-    font-size: 
-  }
   }
   @media(min-width: 1366px) and (max-width: 1400px){
-  
+
   .secondImg{
    margin-top: 10vh;
   }

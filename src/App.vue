@@ -57,7 +57,3 @@ export default {
   }
 }
 </style>
-
-<!-- Going to use components app-header for the Navigation
-and app-footer for the contact details and other. router-view will change the Portfolio, about and skills components
--->

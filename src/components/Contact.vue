@@ -4,13 +4,10 @@
     <div class="container">
       <a href="https://www.linkedin.com/in/nelu-platonov-9b2823144/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
       <a href="https://github.com/nelup20" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <i class="fa fa-skype skype" aria-hidden="true" @click="popup"></i>
-      
-      <div class="skypeName" :style="show">Skype: platon.nelu@yahoo.com</div>
       </div>
-      
-      
-     
+
+
+
   </div>
 </template>
 <script>
@@ -30,7 +27,7 @@ export default {
     }
   }
 }
-    
+
 </script>
 <style scoped>
   h1{
@@ -38,7 +35,7 @@ export default {
     font-family: 'Ubuntu', sans-serif;
     display: inline-block;
     margin: auto;
-    margin-top: 3vh; 
+    margin-top: 3vh;
   }
   .container{
     display: flex;

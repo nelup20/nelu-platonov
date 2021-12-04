@@ -1,52 +1,16 @@
 <template>
   <div class="skillsComponent">
-    <div class="topPart">
-      <h1>Proficient</h1>
-        </div>
-      <div class="skillGroup">
-      <div class="skill">HTML5</div>
-      <div class="skill">CSS3</div>
-      <div class="skill">Javascript (ES6)</div>
-      <div class="skill">Bootstrap</div>
-      <div class="skill">jQuery</div>
-      <div class="skill">Vue.js</div>
-      </div>
-      <div class="skillGroup">
-      <div class="skill">Node.js</div>
-      <div class="skill">Express</div>
-      <div class="skill">MongoDB</div>
-      <div class="skill">NPM</div>
-      <div class="skill">Git</div>
-      <div class="skill">Heroku</div>
-      </div>
-      <h1>Familiar</h1>
-      <div class="skillGroup">
-      <div class="skill">React</div>
-      <div class="skill">Sass</div>
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">PHP</div>
-      <div class="skill">Wordpress</div>
-      </div>
-      <div class="skillGroup">
-      <div class="skill">Jest</div>
-      <div class="skill">Puppeteer</div>
-      <div class="skill">AWS</div>
-      <div class="skill">DigitalOcean</div>
-      <div class="skill">Redis</div>
-      <div class="skill">Linux</div>
-      </div>
-      <h1>Languages (fluent)</h1>
-      <div class="skillGroup languages">
-      <div class="skill">English (native)</div>
-      <div class="skill">Romanian (native)</div>
-      <div class="skill">Dutch</div>
-      <div class="skill">Russian</div>
-      </div>
+    <br>
+    <div>
+      I work with the following technologies professionally: Java EE, Spring Boot, JSP/JSF, Angular, Docker, SQL, various Unix tools (Bash, Awk, grep, sed) etc.
+    </div>
+    <div>
+      In my spare time I also use the following: Javascript, Python, C#, C, Scheme, Redis, MongoDB, JavaFX etc.
+    </div>
   </div>
 </template>
 <script>
-    
+
 </script>
 <style scoped>
  h1{
@@ -105,7 +69,7 @@
     flex: 0.05;
     border-radius: 50%;
     margin-right: 1.3vw;
-    margin-left: 1vw; 
+    margin-left: 1vw;
   }
   #redSkill{
     height: 1vh;
@@ -183,7 +147,7 @@
       height: 205vh;
     }
   }
-  
+
   @media (min-width: 768px) and (max-width: 1024px){
     .skillsComponent{
       height: 160vh;
@@ -223,7 +187,7 @@
   }
   @media (min-width: 1280px) {
     .skillsComponent{
-      width: 100vw; 
+      width: 100vw;
     }
   }
 </style>
