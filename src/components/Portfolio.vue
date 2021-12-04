@@ -1,55 +1,6 @@
 <template>
   <div :style="PortfolioComponent" class="DivEntirePortfolioComponent">
-    <h2>Portfolio</h2>
-        <div class="portfolioNav">
-          <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSite(-1)"></i>
-        <div>
-          <a><img :src="`./static/${previousSite.img}.png`" class="otherSites" alt="" @click="PortfolioSite(-1)"></a>
-        </div>
-        <div>
-          <a :href="currentSite.link" target="_blank"><img :src="`./static/${currentSite.img}.png`" class="siteLogo" alt=""></a>
-        </div>
-        <div>
-          <a><img :src="`./static/${nextSite.img}.png`" class="otherSites" alt="" @click="PortfolioSite(1)" ></a>
-        </div>
-        <i class="fa fa-chevron-right" aria-hidden="true" @click="PortfolioSite(1)"></i>
-      </div>
-      <div>
-        <div class="techUsedBar" :style="expandBar"  @click="activate">
-        <span id="barTitle">Technologies Used</span>
-        <i class="fa fa-plus-circle" aria-hidden="true" :class="{ 'fa fa-minus-circle' : active }"></i>
-       <div class="expandTech" :style="showTech">
-          <div>Front-end: <img v-for="(tech, index) in frontEnd" :key="index" :src="`./static/${tech}.png`" class="logo" alt=""> </div>
-           <div>Back-end: <img v-for="(tech, index) in backEnd" :key="index" :src="`./static/${tech}.png`" class="logo" alt=""> </div>
-           <div>Development: <img v-for="(tech, index) in development" :key="index" :src="`./static/${tech}.png`" class="logo" alt=""> </div>
-       </div>
-        </div>
-      </div>
-      <h2>More to come:</h2>
-      <div class="portfolioNav">
-          <i class="fa fa-chevron-left" aria-hidden="true" id="leftArrow" @click="PortfolioSiteFreeLance(-1)"></i>
-        <div>
-          <a><img :src="`./static/${previousSiteFreelance.img}.png`" class="otherSites" alt="" @click="PortfolioSiteFreeLance(-1)"></a>
-        </div>
-        <div>
-          <a :href="currentSiteFreelance.link" target="_blank"><img :src="`./static/${currentSiteFreelance.img}.png`" class="siteLogo" alt=""></a>
-        </div>
-        <div>
-          <a><img :src="`./static/${nextSiteFreelance.img}.png`" class="otherSites" alt="" @click="PortfolioSiteFreeLance(1)" ></a>
-        </div>
-        <i class="fa fa-chevron-right" aria-hidden="true" @click="PortfolioSiteFreeLance(1)"></i>
-      </div>
-      <div>
-        <div class="techUsedBar" :style="expandBarFreelance"  @click="activateFreelance">
-        <span id="barTitle">Technologies Used</span>
-        <i class="fa fa-plus-circle" aria-hidden="true" :class="{ 'fa fa-minus-circle' : activeFreelance }"></i>
-       <div class="expandTech" :style="showTechFreelance">
-          <div>Front-end: <img v-for="(tech, index) in frontEndFreelance" :key="index" :src="`./static/${tech}.png`" class="logo" alt=""> </div>
-           <div>Back-end: <img v-for="(tech, index) in backEndFreelance" :key="index" :src="`./static/${tech}.png`" class="logo" alt=""> </div>
-           <div>Development: <img v-for="(tech, index) in developmentFreelance" :key="index" :src="`./static/${tech}.png`" class="logo" alt=""> </div>
-       </div>
-        </div>
-      </div>
+    See GitHub.
   </div>
 </template>
 
@@ -99,7 +50,7 @@
         }
       },
       methods: {
-        activate(){       // This is just to toggle the bar, we increase the height and display of the tech stack which means we can use transition ! 
+        activate(){       // This is just to toggle the bar, we increase the height and display of the tech stack which means we can use transition !
           this.active = !this.active;
           this.active ? this.expandBar.height = "24vh" : this.expandBar.height = "1.6vw";
           this.active ? this.showTech.display = "inline" : this.showTech.display = "none";
@@ -276,7 +227,7 @@
     margin-left: 0.3vw;
   }
   .techUsedBar{
-    
+
     padding: 1.5vw;
     padding-left: 1.8vw;
     padding-bottom: 3vw;
@@ -313,7 +264,7 @@
     h2{
       font-size: 2.2vw;
     }
-    
+
     .siteLogo{
       width: 10.5vw;
     }
@@ -329,7 +280,7 @@
     margin-left: 0.3vw;
   }
   .techUsedBar{
-    
+
     padding: 0.2vw;
     padding-left: 1vw;
     font-size: 1.2vw;

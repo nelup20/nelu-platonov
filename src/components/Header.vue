@@ -4,16 +4,13 @@
           <div class="colorOverlay">
                 <img src="" alt="" id="personalPic">
               <div class="secondOverlay">
-              <h1>FULL - STACK</h1><br>
-              <h2>WEB DEVELOPER</h2>
+              <h2>Software Developer</h2>
               <div>
                   <div id="intro">
-              <p>Hi! I'm Nelu Platonov, a passionate self-taught web developer.</p>
-              <p>You can navigate below to my portfolio, skills, about and contact page.</p>
-              <p>Thanks for stopping by and have a wonderful day.</p>
+              <p>Hi, I'm Nelu Platonov. This is an old portfolio site which I'll replace in the (hopefully) near future.</p>
               </div>
               <div id="navigation">
-                 
+
                   <router-link @click.native="highlightRoute('Portfolio')" :class="{ highlight: routes.Portfolio }" to="/portfolio" class="routes" id="IconCode" ><i class="fa fa-code" aria-hidden="true"></i></router-link>
                   <router-link @click.native="highlightRoute('Skills')" :class="{ highlight: routes.Skills }" to="/skills" class="routes" id="IconSkills"><i class="fa fa-check-square" aria-hidden="true"></i>
 </router-link>
@@ -70,7 +67,7 @@
     .area{
         height: 100vh;
         width: 100vw;
-       
+
     }
     .img{
         width: 100vw;
@@ -94,8 +91,8 @@ background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 
         color: rgba(255,255,255, 1);
         margin-top: 8vh;
         font-size: 3vw;
-       
-    
+
+
     }
     h2{
         font-family: 'Ubuntu', sans-serif;
@@ -108,7 +105,7 @@ background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 
         font-family: 'Roboto', sans-serif;
         font-size: 2vw;
         color: rgba(255,255,255, 1);
-        
+
     }
     #personalPic{
         border-radius: 50%;
@@ -137,13 +134,13 @@ background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 
         border-bottom-right-radius: 0%;
         transition: 0.25s; /* delays for 1 second */
        -webkit-transition: 0.25s; /* for Safari & Chrome */
-        
+
     }
     .routes:hover{
        color: black;
        background-color: white;
 
-        
+
     }
     #IconCode{
         left: 29.2vw;
@@ -164,7 +161,7 @@ background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 
         color: black;
        background-color: white;
     }
-    
+
 @media (max-width: 760px){
     h1{
         font-size: 8vw;
@@ -216,7 +213,7 @@ background: linear-gradient(to bottom, rgba(236, 110, 173, 0.68), rgba(52, 148, 
 @media (min-width: 1600px) {
     .area{
         height: 98.2vh;
-       
+
     }
     .img{
         height: 98.2vh;
